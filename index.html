@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="font/bootstrap-icons.min.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="css/loading-page/loading.css" />
+		<link rel="stylesheet" href="animation.css" />
 		<title>Light Novels | Welcome</title>
 	</head>
 
@@ -71,13 +72,13 @@
 						<div class="carousel-item active" id="carousel-slide">
 							<div class="d-flex mx-auto justify-content-between align-items-center w-75 h-100 gap-3" style="z-index: 1">
 								<div>
-									<h1 class="display-2 fw-bold text-center text-lg-start">
+									<h1 class="display-2 drop-in-1 fw-bold text-center text-lg-start">
 										EXPLORE <br />
 										YOUR <br />
 										IMAGINATIONS
 									</h1>
 
-									<p>
+									<p class="drop-in-2">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolorum maiores quis. Atque expedita officiis asperiores distinctio cumque! Nisi ullam commodi culpa suscipit modi
 										natus similique ratione eum quia iste!
 									</p>
@@ -661,9 +662,6 @@
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script>
-			function myFunc() {
-				location.replace("index.html");
-			}
 			const content = document.querySelector("#all-content");
 			const body = document.querySelector("body");
 			const load = document.querySelector(".mangekyou");
@@ -671,6 +669,7 @@
 			setTimeout(() => {
 				content.classList.remove("d-none");
 				body.classList.remove("black-load");
+				$("..mangekyou").fadeOut("slow");
 				load.classList.add("d-none");
 			}, 6000);
 		</script>
