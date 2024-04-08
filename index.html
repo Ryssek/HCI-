@@ -66,7 +66,7 @@
 
 			<!-- Header: Carousel -->
 			<header id="home" class="min-vh-100 container-lg text-bg-light px-0 shadow">
-				<div id="carouselId" class="carousel slide d-flex align-items-center justify-content-center min-vh-100" data-bs-ride="carousel" data-bs-theme="dark">
+				<div id="carouselId" class="carousel slide d-flex align-items-center justify-content-center min-vh-100" data-bs-ride="true" data-bs-theme="dark">
 					<div class="carousel-inner h-100" role="listbox">
 						<!-- First Slide -->
 						<div class="carousel-item active" id="carousel-slide">
@@ -669,10 +669,10 @@
 			setTimeout(() => {
 				content.classList.remove("d-none");
 				body.classList.remove("black-load");
-				$("..mangekyou").fadeOut("slow");
 				load.classList.add("d-none");
-			}, 6000);
+			}, 5000);
 		</script>
+		<script src="observer.js"></script>
 	</body>
 </html>
 
