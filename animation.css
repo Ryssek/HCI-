@@ -25,15 +25,10 @@ header {
 	}
 }
 
-@font-face {
-	font-family: Tabular;
-	src: url(Tabular-Variable.ttf);
-}
-
 @keyframes fade {
 	0% {
 		opacity: 0;
-		transform: translate(0, 3rem);
+		transform: translate(0, -5rem);
 	}
 	100% {
 		opacity: 1;
@@ -43,7 +38,7 @@ header {
 
 @media (prefers-reduced-motion: no-preference) {
 	.in-view {
-		animation: fade 500ms 500ms both;
+		animation: fade 300ms 300ms both;
 	}
 
 	.not-in-view {
